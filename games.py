@@ -46,8 +46,6 @@ def magiceightball():
         print("Pigs are simultaneously dirty and clean")
     input("press enter to exit")
 
-
-
 game = int(input("Choose a game, there is 2 of them, choose a number 1-2 to choose!"))
 if game == 1:
     whatisthenumber()
