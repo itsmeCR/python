@@ -1,3 +1,4 @@
+import random
 def whatisthenumber():   
     # This is the amount of tries that you take, it gets increased towards the end of the code depending on
     # how many tries you take
@@ -22,10 +23,38 @@ def whatisthenumber():
     # This tells you when you correct and the amount of tries you took
     if num2 == num1:
         print("You did it,and it only took " + str(tries) + " trie(s)!")
+    input("press enter to exit")
 
-game = int(input("Choose a game, there is 1 of them, choose a number 1-1 to choose!"))
+def magiceightball():
+    int(input("Type the magic number to initiate the game"))
+    magicnumber = random.randint(1,8)
+    if magicnumber == 1:
+        print("Reptiles are cold blooded")
+    elif magicnumber == 2:
+        print("Cats are children of the devil")
+    elif magicnumber == 3:
+        print("Dogs are cool")
+    elif magicnumber == 4:
+        print("Monkeys like bananas")
+    elif magicnumber == 5:
+        print("Humans are not robots")
+    elif magicnumber == 6:
+        print("Gazelle die to lions")
+    elif magicnumber == 7:
+        print("Meerkats also die to lions")
+    elif magicnumber == 8:
+        print("Pigs are simultaneously dirty and clean")
+    input("press enter to exit")
+
+
+
+game = int(input("Choose a game, there is 2 of them, choose a number 1-2 to choose!"))
 if game == 1:
     whatisthenumber()
+elif game == 2:
+    magiceightball()
+else:
+    print("None of these are valid")
 
 
 
